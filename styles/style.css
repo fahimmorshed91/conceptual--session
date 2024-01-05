@@ -10,6 +10,7 @@
   background-image: url(../images/cow.jpg);
   background-position: bottom center;
   background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 76%, 51% 100%, 51% 100%, 0 75%);
   height: 100vh;
 }
 
@@ -24,14 +25,14 @@
   letter-spacing: 5px;
 }
 
-.article {
+.article, #cow-types {
   margin: 60px 100px;
   border: 10px solid rgb(250, 233, 3);
   padding: 60px;
-  background-color: lightcyan;
+  background: linear-gradient(45deg, violet, lightcyan);
 }
 
-.article h2 {
+.article h2,#cow-types h2 {
   text-align: center;
   font-size: 36px;
   border: 3px solid rgb(250, 233, 3);
@@ -40,4 +41,18 @@
   border-right: 0;
   padding-bottom: 20px;
   margin-bottom: 20px;
+}
+
+.cow-images {
+  display: flex;
+  gap: 90px;
+  justify-content: center;
+}
+
+.cow-images div {
+  width: 300px;
+}
+
+.cow-images img {
+  width: 100%;
 }
